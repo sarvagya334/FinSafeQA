@@ -1,4 +1,4 @@
-# FinSafeQA — Country-Aware Financial RAG System
+# FinSafeQA - A Multi-Task Benchmark for Reliable Financial Reasoning on Stable Assets
 
 FinSafeQA is a hybrid Retrieval-Augmented Generation (RAG) framework designed for explainable financial question answering over stable investment instruments such as:
 
@@ -62,7 +62,7 @@ src/
 
 ```bash
 git clone <your_repo_url>
-cd FinSafeRAG
+cd FinSafeQA
 ```
 
 ### 2. Create Virtual Environment
@@ -299,7 +299,7 @@ print(result)
 
 ## Retrieval Architecture
 
-FinSafeRAG uses:
+FinSafeQA uses:
 
 ### Semantic Retrieval
 - Sentence Transformers
@@ -402,7 +402,7 @@ python app.py
 
 ## Methodology Overview
 
-FinSafeRAG consists of five major stages:
+FinSafeQA consists of five major stages:
 
 1. Financial document ingestion
 2. Adaptive financial chunking
@@ -488,15 +488,3 @@ Responses are validated for:
 - Hallucinated references
 
 before final delivery.
-
----
-
-## Research Contributions
-
-FinSafeRAG introduces:
-
-- Country-governed financial retrieval
-- Adaptive table-aware chunking
-- Explainable financial prompting
-- Hybrid semantic-lexical retrieval
-- Validation-driven financial QA
