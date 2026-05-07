@@ -1,50 +1,60 @@
-# FinSafeQA - A Multi-Task Benchmark for Reliable Financial Reasoning on Stable Assets
+# FinSafeQA — Benchmark Dataset and Evaluation Framework for Stable Financial Assets
 
-FinSafeQA is a hybrid Retrieval-Augmented Generation (RAG) framework designed for explainable financial question answering over stable investment instruments such as:
+FinSafeQA is a benchmark framework for evaluating Retrieval-Augmented Generation (RAG) systems on stable financial asset reasoning tasks across India and Singapore.
+
+The benchmark focuses on low-risk and government-backed investment instruments such as:
 
 - Fixed Deposits (FDs)
+- Public Provident Fund (PPF)
 - Sovereign Gold Bonds (SGBs)
-- Government Securities
-- Retirement Schemes
-- Low-risk Savings Products
+- Treasury Bills
+- Singapore Government Securities (SGS)
+- CPF
+- Savings Schemes
+- Government Bonds
+- Taxation Rules
+- Retirement Products
 
-The system combines:
+Unlike traditional finance QA datasets focused on equities or trading, FinSafeQA evaluates:
 
-- Adaptive financial chunking
-- Hybrid FAISS + BM25 retrieval
-- Country-aware indexing
-- Multi-hop reasoning
-- Explainable prompting
-- Validation-driven response generation
-
----
-
-## Features
-
-- Hybrid semantic + lexical retrieval
-- Country-aware document routing
-- Financial table-aware chunking
-- Multi-hop reasoning pipeline
-- Explainable structured outputs
-- NVIDIA NIM + Ollama support
-- FAISS vector indexing
-- BM25 keyword retrieval
-- Chunk caching for fast ingestion
+- Stable asset reasoning
+- Regulatory understanding
+- Country-aware retrieval
+- Financial calculations
+- Temporal reasoning
+- Hallucination robustness
+- Explainability
+- Multi-hop financial reasoning
 
 ---
 
-## Project Structure
+## Repository Structure
+
+```bash
+README.md
+app.py
+output.md
+requirements.txt
+src/
+data/
+Test/
+```
+
+### Source Code Structure
 
 ```bash
 src/
 │
+├── benchmarks/
 ├── bm25_index.py
 ├── chunk_cache.py
 ├── chunking.py
 ├── config.py
+├── convert_docling.py
 ├── country_detect.py
 ├── country_indexes.py
 ├── embeddings.py
+├── evaluate.py
 ├── hybrid_retrieval.py
 ├── ingestion.py
 ├── multi_prompt_rag.py
@@ -56,16 +66,230 @@ src/
 
 ---
 
+## Dataset Structure
+
+The dataset is divided into:
+
+- Raw financial documents
+- Processed markdown files
+- FAISS indexes
+- BM25 indexes
+- Evaluation benchmarks
+
+### Raw Financial Data
+
+```
+data/raw/
+│
+├── india_stable_assets/
+├── singapore_stable_assets/
+└── macro_and_fx/
+```
+
+The raw corpus contains:
+
+- PDFs
+- CSV files
+- Financial tables
+- Tax rules
+- Government schemes
+- Macroeconomic indicators
+
+covering stable financial assets from India and Singapore.
+
+### Processed Financial Corpus
+
+```
+data/processed/
+```
+
+The processed corpus contains markdown representations of:
+
+- Fixed deposits
+- Treasury bills
+- Retirement schemes
+- Sovereign bonds
+- Tax regulations
+- Macroeconomic indicators
+- Inflation datasets
+- Currency data
+
+**Examples:**
+
+- `India_Stable_Assets__FD.md`
+- `India_Stable_Assets__PPF.md`
+- `India_Stable_Assets__SGB.md`
+- `Singapore Stable Assets - SGS.md`
+- `Singapore Stable Assets - CPF.md`
+- `Singapore Stable Assets - Tbills.md`
+
+---
+
+## Benchmark Categories
+
+FinSafeQA contains multiple benchmark categories designed to evaluate different financial reasoning capabilities.
+
+```
+src/benchmarks/
+```
+
+Available benchmark tasks include:
+
+| Benchmark File | Task Type |
+|---|---|
+| `retrieval_india.json` | Financial retrieval |
+| `retrieval_singapore.json` | Country-aware retrieval |
+| `reasoning_india.json` | Multi-hop reasoning |
+| `reasoning_singapore.json` | Financial reasoning |
+| `comparison_india.json` | Comparative analysis |
+| `comparison_singapore.json` | Cross-instrument comparison |
+| `financial_calculation.json` | Numerical reasoning |
+| `tax_regulation.json` | Taxation QA |
+| `temporal_reasoning.json` | Time-based reasoning |
+| `hallucination_tests.json` | Hallucination robustness |
+| `noisy_queries.json` | Retrieval robustness |
+| `multi_scheme_reasoning.json` | Multi-document reasoning |
+| `scheme_rules.json` | Regulatory understanding |
+| `robustness_queries.json` | Adversarial evaluation |
+
+---
+
+## Key Features
+
+FinSafeQA evaluates RAG systems on:
+
+- Country-aware financial retrieval
+- Stable asset reasoning
+- Government regulation understanding
+- Tax and compliance reasoning
+- Financial calculations
+- Temporal financial reasoning
+- Hallucination resistance
+- Multi-hop retrieval
+- Explainable answer generation
+- Noisy and adversarial query robustness
+
+---
+
+## Architecture Overview
+
+The framework integrates:
+
+- Adaptive financial chunking
+- Hybrid semantic-lexical retrieval
+- Country-specific indexing
+- Explainable prompting
+- Validation-driven generation
+
+### Financial Document Ingestion
+
+Financial documents are automatically enriched with metadata such as:
+
+- Country
+- Regulator
+- Currency
+- Asset class
+- Financial topics
+
+The ingestion pipeline additionally performs:
+
+- Topic inference
+- Chunk enrichment
+- Metadata tagging
+- Cache-based preprocessing
+
+### Adaptive Financial Chunking
+
+FinSafeQA uses financial-aware chunking that preserves:
+
+- Page boundaries
+- Section headings
+- Financial tables
+- Overlapping contextual information
+
+Large tables are chunked row-wise while preserving headers to maintain numerical consistency.
+
+### Country-Aware Indexing
+
+The system builds:
+
+- Separate FAISS indexes
+- Separate BM25 indexes
+- Document maps
+
+for each country.
+
+**Examples:**
+
+```
+data/faiss/
+├── India.index
+├── Singapore.index
+└── Macro.index
+```
+
+This prevents cross-country retrieval contamination and improves regulatory consistency.
+
+### Hybrid Retrieval
+
+The retrieval pipeline combines:
+
+- Semantic retrieval using FAISS
+- Lexical retrieval using BM25
+
+The system additionally:
+
+- Detects country references
+- Filters weak matches
+- Handles ambiguous financial abbreviations
+- Performs diversity-aware reranking
+
+### Multi-Hop Financial Reasoning
+
+Complex financial queries are decomposed into smaller sub-questions for:
+
+- Independent retrieval
+- Intermediate reasoning
+- Final answer aggregation
+
+This improves:
+
+- Comparative reasoning
+- Long-form financial analysis
+- Multi-document synthesis
+
+### Explainable Generation
+
+Generated responses follow a structured explainable format containing:
+
+- Summary
+- Step-by-step reasoning
+- Calculations
+- Assumptions
+- Sources
+- Confidence estimation
+
+### Validation Layer
+
+Responses are validated for:
+
+- Citation correctness
+- Hallucinated references
+- Structural completeness
+- Reasoning consistency
+
+---
+
 ## Installation
 
-### 1. Clone Repository
+### Clone Repository
 
 ```bash
 git clone <your_repo_url>
 cd FinSafeQA
 ```
 
-### 2. Create Virtual Environment
+### Create Environment
 
 **macOS/Linux:**
 
@@ -81,13 +305,13 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### 3. Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-**Required Dependencies** (example `requirements.txt`):
+**Required Dependencies** (example):
 
 ```
 sentence-transformers
@@ -98,43 +322,6 @@ requests
 langchain-core
 torch
 python-dotenv
-```
-
-**For Apple Silicon:**
-
-```bash
-pip install torch torchvision torchaudio
-```
-
----
-
-## Data Directory Structure
-
-Create the following structure:
-
-```
-data/
-│
-├── raw/
-├── processed/
-├── faiss/
-```
-
-### Add Financial Documents
-
-Place markdown financial documents inside:
-
-```
-data/processed/
-```
-
-**Example:**
-
-```
-data/processed/
-├── india_fd.md
-├── singapore_bonds.md
-├── india_singapore_comparison.md
 ```
 
 ---
@@ -169,7 +356,7 @@ ollama pull llama3.2
 ollama serve
 ```
 
-Then set:
+**Set backend:**
 
 ```bash
 LLM_BACKEND=ollama
@@ -180,24 +367,17 @@ OLLAMA_MODEL=llama3.2
 
 ## Running the Pipeline
 
-### 1. Ingest Documents
-
-**Example:**
+### Step 1 — Ingest Financial Documents
 
 ```python
 from src.ingestion import ingest_markdown
 
-docs = ingest_markdown("data/processed/india_fd.md")
+docs = ingest_markdown(
+    "data/processed/India_Stable_Assets__FD.md"
+)
 ```
 
-This performs:
-
-- Metadata inference
-- Adaptive chunking
-- Topic extraction
-- Chunk caching
-
-### 2. Load Embedding Model
+### Step 2 — Load Embedding Model
 
 ```python
 from src.embeddings import load_embedding_model
@@ -205,7 +385,7 @@ from src.embeddings import load_embedding_model
 embed_model = load_embedding_model()
 ```
 
-### 3. Build Country Indexes
+### Step 3 — Build Country Indexes
 
 ```python
 from src.country_indexes import build_country_indexes
@@ -213,177 +393,46 @@ from src.country_indexes import build_country_indexes
 build_country_indexes(
     documents=docs,
     embed_model=embed_model,
-    out_dir="data/faiss"
+    out_dir="data"
 )
 ```
 
-This creates:
-
-- FAISS indexes
-- BM25 indexes
-- Document maps
-
-per country.
-
-### 4. Load Indexes
+### Step 4 — Load Indexes
 
 ```python
 from src.country_indexes import load_country_indexes
 
-country_indexes = load_country_indexes("data/faiss")
+country_indexes = load_country_indexes("data")
 ```
 
-### 5. Initialize LLM
+### Step 5 — Initialize LLM
 
-**NVIDIA NIM:**
+**Ollama:**
 
 ```python
 from src.rag import init_llm
 
+llm = init_llm(
+    backend="ollama"
+)
+```
+
+**or NVIDIA NIM:**
+
+```python
 llm = init_llm(
     api_key="YOUR_API_KEY",
     backend="nvidia"
 )
 ```
 
-**Ollama:**
-
-```python
-llm = init_llm(backend="ollama")
-```
-
-### 6. Run RAG Query
+### Step 6 — Run Financial QA
 
 ```python
 from src.rag import rag_query
 
-answer = rag_query(
-    query="What are FD rates in India?",
-    country_indexes=country_indexes,
-    embed_model=embed_model,
-    llm=llm
-)
-
-print(answer)
-```
-
----
-
-## Multi-Hop Reasoning
-
-For complex queries:
-
-```python
-from src.multi_prompt_rag import multi_prompt_rag
-
-result = multi_prompt_rag(
-    question="Compare SGB vs Singapore Bonds",
-    retrieve_fn=retrieve_function,
-    llm=llm
-)
-
-print(result)
-```
-
----
-
-## Example Queries
-
-- What are FD rates in India?
-- Compare SGB and Singapore Government Securities.
-- What are tax benefits of RBI bonds?
-- Summarize all documents.
-- What are low-risk retirement investments in Singapore?
-
----
-
-## Retrieval Architecture
-
-FinSafeQA uses:
-
-### Semantic Retrieval
-- Sentence Transformers
-- FAISS cosine similarity
-
-### Lexical Retrieval
-- BM25 keyword ranking
-
-### Hybrid Fusion
-- Weighted semantic + lexical scoring
-
----
-
-## Country-Aware Retrieval
-
-The system automatically detects:
-
-- India
-- Singapore
-- USA
-- UK
-- UAE
-
-from user queries and routes retrieval to country-specific indexes.
-
----
-
-## Explainable Output Format
-
-Generated responses include:
-
-- Summary
-- Step-by-step reasoning
-- Calculations
-- Assumptions
-- Sources
-- Confidence level
-
----
-
-## Validation Layer
-
-Outputs are validated for:
-
-- Citation correctness
-- Structure completeness
-- Hallucinated references
-
-before final delivery.
-
----
-
-## Running Full Example
-
-**Example `app.py`:**
-
-```python
-from src.ingestion import ingest_markdown
-from src.embeddings import load_embedding_model
-from src.country_indexes import build_country_indexes, load_country_indexes
-from src.rag import init_llm, rag_query
-
-# ingest
-docs = ingest_markdown("data/processed/india_fd.md")
-
-# embeddings
-embed_model = load_embedding_model()
-
-# build indexes
-build_country_indexes(
-    documents=docs,
-    embed_model=embed_model,
-    out_dir="data/faiss"
-)
-
-# load indexes
-country_indexes = load_country_indexes("data/faiss")
-
-# llm
-llm = init_llm(backend="ollama")
-
-# query
 response = rag_query(
-    query="What are FD rates in India?",
+    query="Compare PPF and SGS returns",
     country_indexes=country_indexes,
     embed_model=embed_model,
     llm=llm
@@ -392,99 +441,59 @@ response = rag_query(
 print(response)
 ```
 
-**Run:**
+---
+
+## Example Queries
+
+- What are FD rates in India?
+- Compare PPF and Singapore Government Securities.
+- What are tax benefits of Sovereign Gold Bonds?
+- Summarize retirement schemes in Singapore.
+- Which stable asset is inflation resistant?
+
+---
+
+## Running Benchmarks
+
+Benchmark files are located in:
+
+```
+src/benchmarks/
+```
+
+Example benchmark categories:
+
+- Retrieval benchmarks
+- Reasoning benchmarks
+- Hallucination tests
+- Noisy query robustness
+- Temporal reasoning
+- Comparative financial analysis
+
+**Run evaluation:**
 
 ```bash
 python app.py
 ```
 
+**or programmatically:**
+
+```python
+from src.evaluate import evaluate
+```
+
 ---
 
-## Methodology Overview
+## Evaluation Dimensions
 
-FinSafeQA consists of five major stages:
+FinSafeQA evaluates:
 
-1. Financial document ingestion
-2. Adaptive financial chunking
-3. Country-aware index construction
-4. Hybrid retrieval and governance
-5. Explainable response generation
-
-### Financial Document Ingestion
-
-Financial markdown documents are enriched with:
-
-- Country
-- Regulator
-- Currency
-- Financial topics
-- Asset class metadata
-
-This metadata is later used for governed retrieval and explainable reasoning.
-
-### Adaptive Financial Chunking
-
-The chunking pipeline preserves:
-
-- Page structure
-- Headings
-- Financial tables
-- Overlapping context windows
-
-Large tables are chunked row-wise while retaining headers to preserve numerical consistency.
-
-### Country-Aware Indexing
-
-Instead of using one global vector database, the system creates:
-
-- Country-specific FAISS indexes
-- Country-specific BM25 indexes
-- Document maps
-
-This prevents cross-country hallucinations and improves regulatory consistency.
-
-### Hybrid Retrieval
-
-The retrieval pipeline combines:
-
-- Semantic FAISS retrieval
-- Lexical BM25 retrieval
-
-using weighted score fusion.
-
-The system additionally:
-
-- Detects country references
-- Filters ambiguous financial terms
-- Enforces jurisdiction-aware retrieval
-
-### Multi-Hop Reasoning
-
-Complex financial queries are decomposed into:
-
-- Smaller sub-questions
-- Independent retrieval steps
-- Aggregated reasoning outputs
-
-This improves comparative financial analysis and long-form reasoning quality.
-
-### Explainable Prompting
-
-Generated outputs follow a structured format:
-
-- Summary
-- Step-by-step reasoning
-- Calculations
-- Assumptions
-- Citations
-- Confidence estimation
-
-### Validation Layer
-
-Responses are validated for:
-
-- Citation correctness
-- Structural completeness
-- Hallucinated references
-
-before final delivery.
+- Retrieval accuracy
+- Reasoning quality
+- Country consistency
+- Citation faithfulness
+- Hallucination robustness
+- Numerical correctness
+- Explainability
+- Temporal reasoning
+- Adversarial robustness
