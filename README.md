@@ -473,7 +473,7 @@ Example benchmark categories:
 **Run evaluation:**
 
 ```bash
-python app.py
+python3 -m src.evaluate
 ```
 
 **or programmatically:**
