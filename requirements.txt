@@ -7,4 +7,5 @@ langchain-openai
 langchain-core
 pdfplumber
 openpyxl
-docling
+tabulate
+python-dotenv

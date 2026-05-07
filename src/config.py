@@ -3,9 +3,9 @@ import os
 # ---- Paths ----
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-DATA_RAW = os.path.join(BASE_DIR, "data", "raw")
+DATA_RAW       = os.path.join(BASE_DIR, "data", "raw")
 DATA_PROCESSED = os.path.join(BASE_DIR, "data", "processed")
-DATA_FAISS = os.path.join(BASE_DIR, "data", "faiss")
+DATA_FAISS     = os.path.join(BASE_DIR, "data", "faiss")
 
 # Create folders if missing
 for p in [DATA_RAW, DATA_PROCESSED, DATA_FAISS]:

@@ -115,9 +115,20 @@ def validate_country_coverage(docs, countries):
     return all(c in present for c in countries)
 
 
-def retrieve_evidence(query, asset_class, countries=None, model=None, index=None, documents=None):
+def retrieve_evidence(
+    query: str, 
+    asset_class: str, 
+    countries: List[str] = None, 
+    model=None, 
+    index=None, 
+    documents=None
+) -> Tuple[List[Dict], Optional[str]]:
+    """
+    Returns (list_of_docs, error_message).
+    If no docs are found, returns ([], None) to allow generative fallback.
+    """
     if detect_ambiguity(query):
-        return None, (
+        return [], (
             "Ambiguous instrument detected.\n"
             "• India: Sovereign Gold Bonds (SGB)\n"
             "• Singapore: Singapore Government Securities (SGS)\n"
@@ -133,9 +144,6 @@ def retrieve_evidence(query, asset_class, countries=None, model=None, index=None
             index=index,
             documents=documents
         )
-
-        if not validate_country_coverage(docs, countries):
-            return None, "Insufficient balanced evidence for comparison."
     else:
         docs = governed_search(
             query=query,
@@ -146,7 +154,6 @@ def retrieve_evidence(query, asset_class, countries=None, model=None, index=None
             documents=documents
         )
 
-    if not docs:
-        return None, "No relevant data found in knowledge base."
-
+    # Removed: if not docs: return None, "No relevant data found..."
+    # Now we return the list even if it is empty.
     return docs, None

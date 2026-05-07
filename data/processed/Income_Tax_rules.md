@@ -14797,9 +14797,7 @@ in India;]
 
 3 [ ( d )  any  sums  paid  by  the  assessee,  during  the  period  beginning  on  the  26th  day  of  January, 2001 and ending on the 30th day of September, 2001, to any trust, institution or fund to which this section applies for providing relief to the victims of earthquake in Gujarat.]
 
-4
-
-*
+4 *
 
 *
 
@@ -21742,9 +21740,9 @@ Provided that no such orders, instructions or directions shall be issued-
 
 Provided that the Central Government shall cause every order issued under this clause to be laid before each House of Parliament.]
 
-*
-
 14
+
+*
 
 *
 
@@ -29089,7 +29087,7 @@ Explanation .-For  the  purposes  of  this  sub-section,  'authorised  represent
 
 ( f )  an  order  made  by  a  Deputy  Commissioner  or  a  Deputy  Director  imposing  a  penalty under section 272A;
 
-3 [( ff ) an order made by a Deputy Commissioner imposing a penalty under section 272AA;]
+3 [(ff) an order made by a Deputy Commissioner imposing a penalty under section 272AA;]
 
 4 [( g ) an order imposing a penalty under Chapter XXI by the Income-tax Officer or the Assistant Commissioner  where  such  penalty  has  been  imposed  with  the  previous  approval  of  the  Deputy Commissioner under sub-section ( 2 ) of section 274;]
 
@@ -31609,7 +31607,17 @@ $$5 * * * * *$$
 
 - ( ii )   reduce  or  waive  the  amount  of  penalty  imposed  or  imposable  on  a  person  under 6 [ section 270A or ] clause ( iii ) of sub-section ( 1 ) of section 271; [or]
 
-- 7 * * * * *
+7
+
+*
+
+*
+
+*
+
+*
+
+*
 
 if he is satisfied that such person-
 

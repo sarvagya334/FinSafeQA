@@ -11,7 +11,10 @@ def detect_device() -> str:
         import torch
         if torch.cuda.is_available():
             return "cuda"
-        return "cpu"     # ✅ Force CPU on mac
+        # Apple Silicon: MPS is significantly faster than CPU
+        if torch.backends.mps.is_available() and torch.backends.mps.is_built():
+            return "mps"
+        return "cpu"
     except Exception:
         return "cpu"
 

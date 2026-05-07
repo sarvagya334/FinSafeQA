@@ -124,7 +124,7 @@ def ingest_markdown(
         **(metadata or {}),
     }
 
-    chunks = chunk_markdown_page_level(md_text)
+    chunks = chunk_markdown_page_level(text)
 
     header = build_chunk_header(meta)
 

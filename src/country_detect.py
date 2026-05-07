@@ -28,8 +28,8 @@ def detect_country_from_query(query: str) -> Optional[str]:
         if re.search(rf"\b{re.escape(alias)}\b", q):
             return canon
 
-    # "in X"
-    m = re.search(r"\bin\s+([a-zA-Z .]{3,40})\b", query)
+    # "in X" — require "in" to be preceded by whitespace or start (not punctuation like lock-in)
+    m = re.search(r"(?<!\w)(?:^|\s)in\s+([a-zA-Z .]{3,40})(?=\s|$|[?.,])", query, re.IGNORECASE)
     if m:
         candidate = m.group(1).strip(" .")
         if len(candidate) >= 3:

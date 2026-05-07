@@ -1,0 +1,79 @@
+[
+{"query":"If 100000 rupees are invested in NSC at 7.7 percent for 5 years what is approximate maturity value?","answer":"145000","type":"reasoning"},
+{"query":"If 50000 rupees are invested in PPF at 7.1 percent what is interest after one year?","answer":"3550","type":"reasoning"},
+{"query":"If category is provision for senior citizens which scheme applies?","answer":"SCSS","type":"reasoning"},
+
+{"query":"If 200000 is invested at 6.6 percent for 2 years what is total interest?","answer":"26400","type":"reasoning"},
+{"query":"If 150000 invested at 7.1 percent for 3 years simple interest what is total interest?","answer":"31950","type":"reasoning"},
+{"query":"If 80000 invested at 6 percent for 5 years what is maturity amount?","answer":"104000","type":"reasoning"},
+{"query":"If 100000 invested at 7 percent for 2 years what is maturity?","answer":"114000","type":"reasoning"},
+{"query":"If 50000 invested at 8 percent for 3 years what is interest?","answer":"12000","type":"reasoning"},
+{"query":"If 120000 invested at 6 percent for 4 years what is interest?","answer":"28800","type":"reasoning"},
+{"query":"If 90000 invested at 7 percent for 1 year what is interest?","answer":"6300","type":"reasoning"},
+
+{"query":"Which scheme applies if monthly income is required?","answer":"MIS","type":"reasoning"},
+{"query":"Which scheme applies if long term tax saving is required?","answer":"PPF","type":"reasoning"},
+{"query":"Which scheme applies if fixed 5 year investment is needed?","answer":"NSC","type":"reasoning"},
+{"query":"Which scheme applies if quarterly income needed for seniors?","answer":"SCSS","type":"reasoning"},
+{"query":"Which scheme applies if girl child savings required?","answer":"Sukanya","type":"reasoning"},
+
+{"query":"If 100000 invested at 7 percent for 3 years and interest reinvested what is approximate value?","answer":"122500","type":"reasoning"},
+{"query":"If 200000 invested at 6 percent for 3 years compounded what is approx maturity?","answer":"238000","type":"reasoning"},
+{"query":"If 150000 invested at 8 percent for 2 years compounded what is approx value?","answer":"175000","type":"reasoning"},
+{"query":"If 50000 invested at 7 percent for 5 years compounded what is approx value?","answer":"70000","type":"reasoning"},
+{"query":"If 80000 invested at 6 percent for 3 years compounded what is approx value?","answer":"95000","type":"reasoning"},
+
+{"query":"If PPF allows max 150000 per year and person invests max for 1 year what is total invested?","answer":"150000","type":"reasoning"},
+{"query":"If MIS allows 450000 max and person invests twice limit what is allowed amount?","answer":"450000","type":"reasoning"},
+{"query":"If SCSS max limit is 3000000 and person invests 3500000 what is valid amount?","answer":"3000000","type":"reasoning"},
+{"query":"If RD minimum deposit is 100 and user deposits 50 is it valid?","answer":"no","type":"reasoning"},
+{"query":"If PPF minimum is 500 and user deposits 1000 is it valid?","answer":"yes","type":"reasoning"},
+
+{"query":"If 100000 earns 7 percent and tax is 20 percent what is net interest?","answer":"5600","type":"reasoning"},
+{"query":"If 200000 earns 6 percent and tax is 10 percent what is net interest?","answer":"10800","type":"reasoning"},
+{"query":"If 150000 earns 8 percent and tax 25 percent what is net interest?","answer":"9000","type":"reasoning"},
+{"query":"If 50000 earns 7 percent and tax 30 percent what is net interest?","answer":"2450","type":"reasoning"},
+{"query":"If 80000 earns 6 percent and tax 20 percent what is net interest?","answer":"3840","type":"reasoning"},
+
+{"query":"If interest is required monthly which scheme MIS or PPF applies?","answer":"MIS","type":"reasoning"},
+{"query":"If tax free returns required which scheme PPF or FD applies?","answer":"PPF","type":"reasoning"},
+{"query":"If high liquidity needed FD or savings account which applies?","answer":"Savings Account","type":"reasoning"},
+{"query":"If guaranteed returns needed FD or mutual fund which applies?","answer":"FD","type":"reasoning"},
+{"query":"If high growth needed FD or mutual fund which applies?","answer":"Mutual Funds","type":"reasoning"},
+
+{"query":"If 100000 invested and withdrawn after 1 year at 7 percent what amount?","answer":"107000","type":"reasoning"},
+{"query":"If 200000 invested and grows 6 percent for 2 years what value?","answer":"224720","type":"reasoning"},
+{"query":"If 150000 grows 8 percent for 3 years what value approx?","answer":"189000","type":"reasoning"},
+{"query":"If 50000 grows 7 percent for 4 years what approx value?","answer":"65500","type":"reasoning"},
+{"query":"If 80000 grows 6 percent for 5 years what approx value?","answer":"107000","type":"reasoning"},
+
+{"query":"If senior citizen wants regular income which scheme applies?","answer":"SCSS","type":"reasoning"},
+{"query":"If short term safe investment needed which scheme applies?","answer":"FD","type":"reasoning"},
+{"query":"If long term compounding needed which scheme applies?","answer":"PPF","type":"reasoning"},
+{"query":"If child savings needed which scheme applies?","answer":"Sukanya","type":"reasoning"},
+{"query":"If guaranteed doubling required which scheme applies?","answer":"KVP","type":"reasoning"},
+
+{"query":"If 100000 grows 7 percent and 10000 withdrawn what is remaining?","answer":"97000","type":"reasoning"},
+{"query":"If 200000 grows 6 percent and 20000 withdrawn what remains?","answer":"192000","type":"reasoning"},
+{"query":"If 150000 grows 8 percent and 15000 withdrawn what remains?","answer":"147000","type":"reasoning"},
+{"query":"If 50000 grows 7 percent and 5000 withdrawn what remains?","answer":"48500","type":"reasoning"},
+{"query":"If 80000 grows 6 percent and 10000 withdrawn what remains?","answer":"74800","type":"reasoning"},
+
+{"query":"If two schemes PPF and MIS which has longer tenure?","answer":"PPF","type":"reasoning"},
+{"query":"If two schemes FD and mutual funds which has fixed returns?","answer":"FD","type":"reasoning"},
+{"query":"If two schemes SCSS and MIS which has higher interest?","answer":"SCSS","type":"reasoning"},
+{"query":"If two schemes savings and FD which has liquidity?","answer":"Savings Account","type":"reasoning"},
+{"query":"If two schemes NSC and PPF which has tax free maturity?","answer":"PPF","type":"reasoning"},
+
+{"query":"If 100000 grows 10 percent then drops 10 percent what value?","answer":"99000","type":"reasoning"},
+{"query":"If 200000 grows 20 percent then drops 10 percent what value?","answer":"216000","type":"reasoning"},
+{"query":"If 150000 grows 30 percent then drops 20 percent what value?","answer":"156000","type":"reasoning"},
+{"query":"If 50000 grows 50 percent then drops 50 percent what value?","answer":"37500","type":"reasoning"},
+{"query":"If 80000 grows 25 percent then drops 10 percent what value?","answer":"90000","type":"reasoning"},
+
+{"query":"If monthly income needed and tax not concern which scheme?","answer":"MIS","type":"reasoning"},
+{"query":"If tax saving needed and long term which scheme?","answer":"PPF","type":"reasoning"},
+{"query":"If senior citizen and fixed income needed which scheme?","answer":"SCSS","type":"reasoning"},
+{"query":"If safe short term deposit needed which scheme?","answer":"FD","type":"reasoning"},
+{"query":"If high returns and risk acceptable which scheme?","answer":"Mutual Funds","type":"reasoning"}
+]

@@ -1,0 +1,91 @@
+[
+{"query":"Can NRIs invest in National Savings Certificate?","answer":"no","type":"rule"},
+{"query":"What is the maximum annual deposit allowed in a PPF account?","answer":"150000","type":"rule"},
+{"query":"Can joint accounts be opened under PPF?","answer":"no","type":"rule"},
+{"query":"Who can open a Sukanya Samriddhi account?","answer":"guardian of girl child","type":"rule"},
+{"query":"Which section allows deduction for savings investments?","answer":"80C","type":"regulation"},
+
+{"query":"Is PPF interest taxable?","answer":"no","type":"rule"},
+{"query":"Is FD interest taxable?","answer":"yes","type":"rule"},
+{"query":"Is MIS interest taxable?","answer":"yes","type":"rule"},
+{"query":"Is SCSS interest taxable?","answer":"yes","type":"rule"},
+{"query":"Is Sukanya interest tax free?","answer":"yes","type":"rule"},
+
+{"query":"Can NRIs open PPF account?","answer":"no","type":"rule"},
+{"query":"Can PPF account be extended after maturity?","answer":"yes","type":"rule"},
+{"query":"Can PPF account be opened jointly?","answer":"no","type":"rule"},
+{"query":"Can minors open PPF account?","answer":"yes","type":"rule"},
+{"query":"Is loan allowed in PPF?","answer":"yes","type":"rule"},
+
+{"query":"Is premature withdrawal allowed in NSC?","answer":"no","type":"rule"},
+{"query":"Can NSC be pledged as collateral?","answer":"yes","type":"rule"},
+{"query":"Is NSC eligible for tax deduction?","answer":"yes","type":"rule"},
+{"query":"Is NSC interest taxable?","answer":"yes","type":"rule"},
+{"query":"Can NSC be transferred?","answer":"yes","type":"rule"},
+
+{"query":"Is SCSS only for senior citizens?","answer":"yes","type":"rule"},
+{"query":"Can SCSS be opened before 60 years?","answer":"no","type":"rule"},
+{"query":"Can SCSS be extended after maturity?","answer":"yes","type":"rule"},
+{"query":"Is SCSS eligible under 80C?","answer":"yes","type":"rule"},
+{"query":"Can SCSS account be opened jointly?","answer":"yes","type":"rule"},
+
+{"query":"Can MIS account be opened jointly?","answer":"yes","type":"rule"},
+{"query":"Is MIS interest paid monthly?","answer":"yes","type":"rule"},
+{"query":"Is MIS eligible for tax deduction?","answer":"no","type":"rule"},
+{"query":"Is MIS government backed?","answer":"yes","type":"rule"},
+{"query":"Can MIS be closed before maturity?","answer":"yes","type":"rule"},
+
+{"query":"Is RD interest taxable?","answer":"yes","type":"rule"},
+{"query":"Can RD be closed prematurely?","answer":"yes","type":"rule"},
+{"query":"Is RD suitable for small savings?","answer":"yes","type":"rule"},
+{"query":"Is RD deposit mandatory monthly?","answer":"yes","type":"rule"},
+{"query":"Is RD government backed?","answer":"yes","type":"rule"},
+
+{"query":"Are FD returns guaranteed?","answer":"yes","type":"rule"},
+{"query":"Is FD interest taxable?","answer":"yes","type":"rule"},
+{"query":"Can FD be withdrawn prematurely?","answer":"yes","type":"rule"},
+{"query":"Is FD suitable for short term investment?","answer":"yes","type":"rule"},
+{"query":"Is FD risk free?","answer":"yes","type":"rule"},
+
+{"query":"Is savings account interest taxable?","answer":"yes","type":"rule"},
+{"query":"Can savings account be opened online?","answer":"yes","type":"rule"},
+{"query":"Is savings account highly liquid?","answer":"yes","type":"rule"},
+{"query":"Is savings account safe?","answer":"yes","type":"rule"},
+{"query":"Is savings account suitable for emergency funds?","answer":"yes","type":"rule"},
+
+{"query":"Can Sukanya account be transferred?","answer":"yes","type":"rule"},
+{"query":"Is Sukanya account only for girl child?","answer":"yes","type":"rule"},
+{"query":"Can more than two Sukanya accounts be opened?","answer":"no","type":"rule"},
+{"query":"Is Sukanya eligible under 80C?","answer":"yes","type":"rule"},
+{"query":"Is Sukanya interest tax free?","answer":"yes","type":"rule"},
+
+{"query":"Are Treasury Bills risk free?","answer":"yes","type":"rule"},
+{"query":"Are Treasury Bills issued by RBI?","answer":"yes","type":"rule"},
+{"query":"Are Treasury Bills short term instruments?","answer":"yes","type":"rule"},
+{"query":"Are Treasury Bills taxable?","answer":"yes","type":"rule"},
+{"query":"Are Treasury Bills liquid?","answer":"yes","type":"rule"},
+
+{"query":"Is EPF mandatory for salaried employees?","answer":"yes","type":"rule"},
+{"query":"Do both employee and employer contribute to EPF?","answer":"yes","type":"rule"},
+{"query":"Can EPF be withdrawn before retirement?","answer":"yes","type":"rule"},
+{"query":"Is EPF meant for retirement savings?","answer":"yes","type":"rule"},
+{"query":"Is EPF tax free on maturity?","answer":"yes","type":"rule"},
+
+{"query":"Is KVP government backed?","answer":"yes","type":"rule"},
+{"query":"Does KVP double money?","answer":"yes","type":"rule"},
+{"query":"Is KVP interest taxable?","answer":"yes","type":"rule"},
+{"query":"Can KVP be transferred?","answer":"yes","type":"rule"},
+{"query":"Is KVP safe investment?","answer":"yes","type":"rule"},
+
+{"query":"Is 80C deduction applicable to PPF?","answer":"yes","type":"regulation"},
+{"query":"Is 80C deduction applicable to NSC?","answer":"yes","type":"regulation"},
+{"query":"Is 80C deduction applicable to SCSS?","answer":"yes","type":"regulation"},
+{"query":"Is 80C deduction applicable to FD?","answer":"yes","type":"regulation"},
+{"query":"Is 80C deduction applicable to MIS?","answer":"no","type":"regulation"},
+
+{"query":"Is interest from FD fully taxable?","answer":"yes","type":"regulation"},
+{"query":"Is PPF maturity exempt from tax?","answer":"yes","type":"regulation"},
+{"query":"Is Sukanya maturity exempt from tax?","answer":"yes","type":"regulation"},
+{"query":"Is SCSS interest subject to tax?","answer":"yes","type":"regulation"},
+{"query":"Is savings account interest taxable above limit?","answer":"yes","type":"regulation"}
+]

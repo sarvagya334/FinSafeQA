@@ -1,0 +1,97 @@
+[
+{"query":"What is the interest rate of National Savings Certificate?","answer":"7.7%","type":"retrieval"},
+{"query":"What is the maturity period of National Savings Certificate?","answer":"5 years","type":"retrieval"},
+{"query":"What is the minimum investment required for National Savings Certificate?","answer":"1000","type":"retrieval"},
+{"query":"What is the minimum deposit required to open a Post Office Savings Account?","answer":"500","type":"retrieval"},
+{"query":"What is the maximum deposit allowed in PPF per year?","answer":"150000","type":"rule"},
+
+{"query":"What is the interest rate of PPF?","answer":"7.1%","type":"retrieval"},
+{"query":"What is the maturity period of PPF?","answer":"15 years","type":"retrieval"},
+{"query":"What is the minimum deposit in PPF?","answer":"500","type":"retrieval"},
+{"query":"What is the interest rate of MIS?","answer":"6.6%","type":"retrieval"},
+{"query":"What is the maturity period of MIS?","answer":"5 years","type":"retrieval"},
+
+{"query":"What is the maximum deposit in MIS single account?","answer":"450000","type":"rule"},
+{"query":"What is the maximum deposit in MIS joint account?","answer":"900000","type":"rule"},
+{"query":"What is the payout frequency of MIS?","answer":"monthly","type":"retrieval"},
+{"query":"What is the interest rate of SCSS?","answer":"8.2%","type":"retrieval"},
+{"query":"What is the maturity period of SCSS?","answer":"5 years","type":"retrieval"},
+
+{"query":"What is the maximum investment allowed in SCSS?","answer":"3000000","type":"rule"},
+{"query":"What is the minimum investment in SCSS?","answer":"1000","type":"retrieval"},
+{"query":"What is the payout frequency of SCSS?","answer":"quarterly","type":"retrieval"},
+{"query":"What is the interest rate of Sukanya Samriddhi scheme?","answer":"8.2%","type":"retrieval"},
+{"query":"What is the minimum deposit in Sukanya Samriddhi?","answer":"250","type":"retrieval"},
+
+{"query":"What is the maximum deposit in Sukanya Samriddhi per year?","answer":"150000","type":"rule"},
+{"query":"What is the maturity period of Sukanya Samriddhi?","answer":"21 years","type":"retrieval"},
+{"query":"What is the interest rate of Kisan Vikas Patra?","answer":"7.5%","type":"retrieval"},
+{"query":"What is the maturity period of Kisan Vikas Patra?","answer":"115 months","type":"retrieval"},
+{"query":"What is the minimum deposit in Kisan Vikas Patra?","answer":"1000","type":"retrieval"},
+
+{"query":"What is the interest rate of Post Office Recurring Deposit?","answer":"6.7%","type":"retrieval"},
+{"query":"What is the maturity period of Recurring Deposit?","answer":"5 years","type":"retrieval"},
+{"query":"What is the minimum deposit in Recurring Deposit?","answer":"100","type":"retrieval"},
+{"query":"What is the interest rate of Time Deposit 1 year?","answer":"6.9%","type":"retrieval"},
+{"query":"What is the interest rate of Time Deposit 2 years?","answer":"7%","type":"retrieval"},
+
+{"query":"What is the interest rate of Time Deposit 3 years?","answer":"7.1%","type":"retrieval"},
+{"query":"What is the interest rate of Time Deposit 5 years?","answer":"7.5%","type":"retrieval"},
+{"query":"What is the minimum deposit in Time Deposit?","answer":"1000","type":"retrieval"},
+{"query":"What is the interest rate of Post Office Savings Account?","answer":"4%","type":"retrieval"},
+{"query":"What is the minimum balance required in Post Office Savings Account?","answer":"500","type":"retrieval"},
+
+{"query":"What is the interest rate of EPF?","answer":"8.15%","type":"retrieval"},
+{"query":"What is the contribution rate of EPF?","answer":"12%","type":"retrieval"},
+{"query":"What is the interest rate of PPF loan?","answer":"1%","type":"retrieval"},
+{"query":"After how many years can PPF loan be taken?","answer":"3 years","type":"retrieval"},
+{"query":"After how many years is partial withdrawal allowed in PPF?","answer":"5 years","type":"retrieval"},
+
+{"query":"What is the compounding frequency of PPF?","answer":"annually","type":"retrieval"},
+{"query":"What is the compounding frequency of FD?","answer":"quarterly","type":"retrieval"},
+{"query":"What is the minimum tenure of FD?","answer":"7 days","type":"retrieval"},
+{"query":"What is the maximum tenure of FD?","answer":"10 years","type":"retrieval"},
+{"query":"Are FD returns guaranteed?","answer":"yes","type":"rule"},
+
+{"query":"Is PPF interest taxable?","answer":"no","type":"rule"},
+{"query":"Is FD interest taxable?","answer":"yes","type":"rule"},
+{"query":"Is MIS interest taxable?","answer":"yes","type":"rule"},
+{"query":"Is SCSS interest taxable?","answer":"yes","type":"rule"},
+{"query":"Is Sukanya interest tax free?","answer":"yes","type":"rule"},
+
+{"query":"Is NSC eligible under 80C?","answer":"yes","type":"rule"},
+{"query":"Is SCSS eligible under 80C?","answer":"yes","type":"rule"},
+{"query":"Is PPF eligible under 80C?","answer":"yes","type":"rule"},
+{"query":"Can NSC be pledged as collateral?","answer":"yes","type":"rule"},
+{"query":"Is premature withdrawal allowed in NSC?","answer":"no","type":"rule"},
+
+{"query":"Can SCSS be extended after maturity?","answer":"yes","type":"rule"},
+{"query":"Can SCSS be opened jointly?","answer":"yes","type":"rule"},
+{"query":"Can PPF account be opened jointly?","answer":"no","type":"rule"},
+{"query":"Can NRIs open PPF account?","answer":"no","type":"rule"},
+{"query":"Can PPF be extended after maturity?","answer":"yes","type":"rule"},
+
+{"query":"What is the extension period of PPF?","answer":"5 years","type":"retrieval"},
+{"query":"What is the minimum age for SCSS?","answer":"60 years","type":"retrieval"},
+{"query":"What is the minimum age for Sukanya Samriddhi?","answer":"below 10 years","type":"retrieval"},
+{"query":"How many Sukanya accounts can be opened?","answer":"2","type":"retrieval"},
+{"query":"What is the penalty for missing Sukanya deposit?","answer":"50","type":"retrieval"},
+
+{"query":"Can Sukanya account be transferred?","answer":"yes","type":"rule"},
+{"query":"Is savings account interest taxable?","answer":"yes","type":"rule"},
+{"query":"What is the liquidity of savings account?","answer":"high","type":"retrieval"},
+{"query":"Can savings account be opened online?","answer":"yes","type":"rule"},
+{"query":"Is RD interest taxable?","answer":"yes","type":"rule"},
+
+{"query":"Can RD be closed prematurely?","answer":"yes","type":"rule"},
+{"query":"What is the compounding frequency of RD?","answer":"quarterly","type":"retrieval"},
+{"query":"Is RD suitable for small savings?","answer":"yes","type":"rule"},
+{"query":"What is the tenure of Treasury Bill 91 days?","answer":"91 days","type":"retrieval"},
+{"query":"What is the tenure of Treasury Bill 182 days?","answer":"182 days","type":"retrieval"},
+
+{"query":"What is the tenure of Treasury Bill 364 days?","answer":"364 days","type":"retrieval"},
+{"query":"Who issues Treasury Bills in India?","answer":"RBI","type":"retrieval"},
+{"query":"Are Treasury Bills risk free?","answer":"yes","type":"rule"},
+{"query":"What is the purpose of EPF?","answer":"retirement savings","type":"retrieval"},
+{"query":"Who contributes to EPF?","answer":"employee and employer","type":"retrieval"}
+]

@@ -1,0 +1,103 @@
+[
+{"query":"If 100000 is invested in PPF at 7.1 percent for 2 years compounded annually what is maturity amount?","answer":"114449"},
+{"query":"If 200000 is invested at 6.6 percent for 3 years compounded annually what is maturity amount?","answer":"242334"},
+{"query":"If 150000 grows at 7.1 percent for 5 years what is maturity amount?","answer":"210766"},
+{"query":"If 50000 is invested at 8 percent for 4 years what is maturity amount?","answer":"68024"},
+{"query":"If 100000 is invested at 7.4 percent for 3 years what is maturity amount?","answer":"123932"},
+
+{"query":"If 100000 is invested at 7 percent for 2 years and interest is withdrawn every year what total interest is earned?","answer":"14000"},
+{"query":"If 200000 is invested at 6 percent for 3 years simple interest what is total interest?","answer":"36000"},
+{"query":"If 50000 is invested at 8 percent for 5 years simple interest what is maturity amount?","answer":"70000"},
+{"query":"If 120000 earns 7 percent for 4 years simple interest what is total amount?","answer":"153600"},
+{"query":"If 80000 earns 6 percent for 2 years simple interest what is interest earned?","answer":"9600"},
+
+{"query":"If 100000 is invested at 7 percent for 1 year and then rate becomes 8 percent next year what is final amount?","answer":"115560"},
+{"query":"If 200000 is invested for 2 years at 6 percent then 7 percent what is maturity?","answer":"226840"},
+{"query":"If 150000 grows at 7 percent then 7.5 percent then 8 percent over 3 years what is final amount?","answer":"182616"},
+{"query":"If 50000 grows at 8 percent for 2 years then 6 percent for 1 year what is final amount?","answer":"61245"},
+{"query":"If 100000 grows at 7 percent for 3 years but last year only half interest is applied what is amount?","answer":"120745"},
+
+{"query":"If 100000 is invested and 10000 is added every year for 3 years at 7 percent what is final amount?","answer":"139043"},
+{"query":"If 50000 is invested and 5000 added yearly for 4 years at 8 percent what is maturity?","answer":"80995"},
+{"query":"If 200000 initial and 20000 added yearly for 2 years at 6 percent what is final amount?","answer":"251872"},
+{"query":"If 150000 initial and 10000 added yearly for 3 years at 7 percent what is final amount?","answer":"194343"},
+{"query":"If 80000 initial and 8000 added yearly for 5 years at 6 percent what is final amount?","answer":"135437"},
+
+{"query":"If 100000 is invested at 7 percent for 3 years and 20000 withdrawn after year 2 what is final amount?","answer":"103823"},
+{"query":"If 200000 invested at 6 percent and 50000 withdrawn after 1 year then grown 2 more years what is final amount?","answer":"180596"},
+{"query":"If 150000 grows at 7 percent and 30000 withdrawn after 2 years what is final amount after 3rd year?","answer":"141748"},
+{"query":"If 80000 grows at 8 percent and 10000 withdrawn each year for 2 years what is final amount?","answer":"70387"},
+{"query":"If 50000 grows at 6 percent and 5000 withdrawn after year 1 what is final amount after 3 years?","answer":"56509"},
+
+{"query":"If 100000 earns 7 percent but tax is 20 percent on interest what is effective yearly interest?","answer":"5600"},
+{"query":"If 200000 earns 6 percent and tax 10 percent what is net interest?","answer":"10800"},
+{"query":"If 150000 earns 8 percent and tax 30 percent what is net interest?","answer":"8400"},
+{"query":"If 50000 earns 7 percent and tax 20 percent for 2 years simple interest what is net gain?","answer":"5600"},
+{"query":"If 80000 earns 6 percent and tax 25 percent what is net yearly interest?","answer":"3600"},
+
+{"query":"If 100000 grows at 7 percent compounded and inflation is 5 percent what is real gain after 1 year?","answer":"2000"},
+{"query":"If 200000 grows at 6 percent and inflation is 4 percent what is real gain?","answer":"4000"},
+{"query":"If 150000 grows at 8 percent and inflation 6 percent what is real gain?","answer":"3000"},
+{"query":"If 50000 grows at 7 percent and inflation 3 percent what is real gain?","answer":"2000"},
+{"query":"If 80000 grows at 6 percent and inflation 2 percent what is real gain?","answer":"3200"},
+
+{"query":"If 100000 doubles in 10 years what is approximate annual rate?","answer":"7"},
+{"query":"If 200000 doubles in 12 years what is approximate rate?","answer":"6"},
+{"query":"If 150000 doubles in 9 years what is approximate rate?","answer":"8"},
+{"query":"If 50000 doubles in 6 years what is approximate rate?","answer":"12"},
+{"query":"If 80000 doubles in 8 years what is approximate rate?","answer":"9"},
+
+{"query":"If 100000 invested in FD gives 7 percent and mutual fund gives 10 percent what extra return in 1 year?","answer":"3000"},
+{"query":"If 200000 in FD at 6 percent vs bond at 8 percent what extra return?","answer":"4000"},
+{"query":"If 150000 at 7 percent vs 9 percent what difference?","answer":"3000"},
+{"query":"If 50000 at 6 percent vs 10 percent what extra return?","answer":"2000"},
+{"query":"If 80000 at 5 percent vs 7 percent what difference?","answer":"1600"},
+
+{"query":"If 100000 compounded yearly vs simple interest at 7 percent for 2 years what extra gain?","answer":"490"},
+{"query":"If 200000 at 6 percent for 3 years compound vs simple difference?","answer":"2192"},
+{"query":"If 150000 at 8 percent for 2 years difference?","answer":"960"},
+{"query":"If 50000 at 7 percent for 3 years difference?","answer":"735"},
+{"query":"If 80000 at 6 percent for 4 years difference?","answer":"1190"},
+
+{"query":"If 100000 invested quarterly compounding at 8 percent for 1 year what is amount?","answer":"108243"},
+{"query":"If 200000 quarterly compounding 6 percent what is amount after 1 year?","answer":"212272"},
+{"query":"If 150000 quarterly compounding 7 percent what is amount?","answer":"160948"},
+{"query":"If 50000 quarterly compounding 8 percent what is amount?","answer":"54121"},
+{"query":"If 80000 quarterly compounding 6 percent what is amount?","answer":"84909"},
+
+{"query":"If 100000 invested monthly compounding 12 percent for 1 year what is amount?","answer":"112683"},
+{"query":"If 200000 monthly compounding 6 percent what is amount?","answer":"212336"},
+{"query":"If 150000 monthly compounding 8 percent what is amount?","answer":"162498"},
+{"query":"If 50000 monthly compounding 10 percent what is amount?","answer":"55204"},
+{"query":"If 80000 monthly compounding 9 percent what is amount?","answer":"87457"},
+
+{"query":"If 100000 grows 7 percent annually what is amount after 10 years?","answer":"196715"},
+{"query":"If 200000 grows 6 percent for 8 years what is amount?","answer":"318673"},
+{"query":"If 150000 grows 8 percent for 6 years what is amount?","answer":"237981"},
+{"query":"If 50000 grows 7 percent for 7 years what is amount?","answer":"80352"},
+{"query":"If 80000 grows 6 percent for 9 years what is amount?","answer":"134988"},
+
+{"query":"If 100000 invested and doubles then loses 20 percent what is final amount?","answer":"160000"},
+{"query":"If 200000 increases 50 percent then decreases 20 percent what is final?","answer":"240000"},
+{"query":"If 150000 increases 40 percent then decreases 10 percent what is final?","answer":"189000"},
+{"query":"If 50000 increases 30 percent then decreases 30 percent what is final?","answer":"45500"},
+{"query":"If 80000 increases 25 percent then decreases 10 percent what is final?","answer":"90000"},
+
+{"query":"If 100000 grows 10 percent yearly and 5000 withdrawn yearly for 2 years what is final?","answer":"111550"},
+{"query":"If 200000 grows 8 percent and 10000 withdrawn yearly for 3 years what is final?","answer":"224259"},
+{"query":"If 150000 grows 7 percent and 5000 withdrawn yearly for 4 years what is final?","answer":"168793"},
+{"query":"If 50000 grows 6 percent and 2000 withdrawn yearly for 3 years what is final?","answer":"53368"},
+{"query":"If 80000 grows 5 percent and 4000 withdrawn yearly for 2 years what is final?","answer":"78600"},
+
+{"query":"If 100000 at 7 percent and 200000 at 6 percent what total interest in 1 year?","answer":"19000"},
+{"query":"If 150000 at 8 percent and 50000 at 6 percent total interest?","answer":"15000"},
+{"query":"If 200000 at 7 percent and 100000 at 5 percent total?","answer":"19000"},
+{"query":"If 50000 at 8 percent and 80000 at 6 percent total?","answer":"8800"},
+{"query":"If 70000 at 7 percent and 30000 at 9 percent total?","answer":"7600"},
+
+{"query":"If 100000 grows 7 percent yearly how much interest in year 3 only?","answer":"8015"},
+{"query":"If 200000 grows 6 percent yearly what interest in year 2?","answer":"12720"},
+{"query":"If 150000 grows 8 percent yearly interest in year 4?","answer":"18896"},
+{"query":"If 50000 grows 7 percent yearly interest in year 5?","answer":"7013"},
+{"query":"If 80000 grows 6 percent yearly interest in year 3?","answer":"5393"}
+]

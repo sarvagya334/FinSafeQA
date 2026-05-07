@@ -1,8 +1,8 @@
 import os
 from dotenv import load_dotenv
 
-from src.config import DATA_RAW, DATA_PROCESSED
-from src.convert_docling import convert_all_raw_to_markdown
+from pathlib import Path
+from src.config import DATA_PROCESSED
 from src.ingestion import ingest_markdown
 from src.embeddings import load_embedding_model
 from src.country_indexes import build_country_indexes, load_country_indexes
@@ -24,9 +24,9 @@ def main():
     if not nvidia_key:
         raise ValueError("NVIDIA_API_KEY not found in .env")
 
-    # ---- 1) Convert raw -> markdown ----
-    md_files = convert_all_raw_to_markdown(DATA_RAW, DATA_PROCESSED)
-    print("\nConverted markdown files:", len(md_files))
+    # ---- 1) Read pre-converted markdown files directly ----
+    md_files = sorted(str(p) for p in Path(DATA_PROCESSED).glob("*.md"))
+    print(f"\nFound {len(md_files)} markdown files in data/processed/")
 
     # ---- 2) Ingest markdown (chunk once cache) ----
     documents = []
